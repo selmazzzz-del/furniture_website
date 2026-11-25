@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Furniture</title>
+
+    <!-- stylesheet -->
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- font awesome cdn link -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+      integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- google font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Agrave+Pro:wght@100..700&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navigation Section -->
+
+    <nav class="navbar">
+      <a class="brand" href="">
+        <i class="fa-solid fa-couch"></i>
+        <span class="brandName">MYFURNITURE</span>
+      </a>
+
+      <!-- checkbox -->
+
+      <input type="checkbox" id="check" />
+      <label class="icons" for="check">
+        <!-- Menu Icon -->
+
+        <i id="menuIcon" class="fa-solid fa-bars"></i>
+
+        <!-- Close icon -->
+
+        <i id="cancelIcon" class="fa-solid fa-x"></i>
+      </label>
+
+      <ul class="navLinks">
+        <li class="links"><a href="#home" class="link">HOME</a></li>
+        <li class="links"><a href="#products" class="link">PRODUCTS</a></li>
+        <li class="links"><a href="#about" class="link">ABOUT</a></li>
+        <li class="links"><a href="#contact" class="link">CONTACT</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hero section -->
+
+    <section id="home" class="hero">
+      <!-- text content -->
+      <div class="heroText">
+        <h1 class="heroTitle">Modern Furniture For Your Home</h1>
+        <p class="heroPara">
+          Discover stylish and comfortable furniture for your living
+          room,bedroom and office
+        </p>
+        <button class="heroButton">Shop now</button>
+      </div>
+      <div class="heroImage">
+        <img
+          class="furnitureImage"
+          src="./Images/furniture.png"
+          alt="no image"
+        />
+      </div>
+    </section>
+
+    <!-- Product section -->
+
+    <section id="products" class="products">
+      <!-- heading -->
+      <h1 class="productHead">Our Products</h1>
+
+      <!-- Cards -->
+
+      <div class="productContainer">
+        <!-- card 1 -->
+
+        <div class="card">
+          <!-- image -->
+          <img class="cardImage" src="./Images/Chair.png" alt="no image" />
+          <!-- Product Name -->
+          <h3 class="productName">Chair</h3>
+          <!-- Product Price -->
+          <p class="price">$150</p>
+          <!-- Button -->
+          <button class="heroButton">Buy now</button>
+        </div>
+        <!-- card 2 -->
+
+        <div class="card">
+          <!-- image -->
+          <img class="cardImage" src="./Images/Sofa.png" alt="no image" />
+          <!-- Product Name -->
+          <h3 class="productName">Sofa</h3>
+          <!-- Product Price -->
+          <p class="price">$250</p>
+          <!-- Button -->
+          <button class="heroButton">Buy now</button>
+        </div>
+
+        <!-- card 3 -->
+        <div class="card">
+          <!-- image -->
+          <img class="cardImage" src="./Images/Bed.png" alt="no image" />
+          <!-- Product Name -->
+          <h3 class="productName">Bed</h3>
+          <!-- Product Price -->
+          <p class="price">$350</p>
+          <!-- Button -->
+          <button class="heroButton">Buy now</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Banner -->
+
+    <section id="about" class="banner">
+      <h2 class="aboutHead">About Us</h2>
+      <p class="aboutPara">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit
+        ab facilis fugiat debitis asperiores quae cupiditate aliquid sapiente
+        doloremque. Quam esse cupiditate excepturi nostrum iure autem veritatis
+        eos deleniti laudantium. Ab nihil soluta neque aliquam voluptates
+        deleniti recusandae perspiciatis velit earum rerum fugit laboriosam,
+        sint incidunt tempore modi exercitationem cum deserunt voluptatum quos
+        voluptatem error. Hic magnam eligendi nihil eveniet!
+      </p>
+      <button class="aboutButton">Let's Talk</button>
+    </section>
+
+    <!-- Footer -->
+
+    <section id="contact" class="contact">
+      <div class="contactDiv">
+        <h3 class="contactHead">Contact Us</h3>
+        <h4 class="contactPh">+001-5455555</h4>
+        <p class="contactMail">Info@gmail.com</p>
+
+        <div class="socialIcons">
+          <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-square-x-twitter"></i></a>
+          <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+        </div>
+      </div>
+      <!-- Subscribe -->
+      <div class="subscribe">
+        <h3 class="subHead">Join Us Mail</h3>
+        <div class="box">
+          <input type="text" placeholder="Email" class="subInput" />
+          <button class="subButton">Join</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- foot -->
+    <p class="footer">
+      &copy;Designed by Nov 26 Luminar TechnoLab,All rights reserved
+    </p>
+  </body>
+</html>

@@ -1,0 +1,293 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Barlow", sans-serif;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f5f5f5;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%;
+  background-color: white;
+  box-shadow: 0px 1px 50px rgb(58, 56, 50);
+  font-weight: bold;
+  position: fixed;
+  width: 100%;
+}
+.brand {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+.brandName {
+  margin-left: 10px;
+}
+#check {
+  display: none;
+}
+.navLinks {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+  transition: 0.3s;
+}
+.link {
+  text-decoration: none;
+  color: black;
+}
+.link:hover {
+  color: green;
+}
+.icons {
+  font-size: 20px;
+  cursor: pointer;
+  position: absolute;
+  right: 1%;
+  display: none;
+}
+
+.hero {
+  display: flex;
+  padding: 100px 5%;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+.heroText {
+  flex: 1;
+  animation: fadeIn 1s ease;
+}
+
+.heroTitle {
+  font-size: 50px;
+  margin: 15px;
+}
+.heroPara {
+  margin-bottom: 15px;
+}
+.heroButton {
+  background-color: brown;
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.9s;
+}
+
+.heroButton:hover {
+  background-color: black;
+  transform: scale(1.1);
+}
+.heroImage {
+  flex: 1;
+  padding: 0px;
+}
+.furnitureImage {
+  width: 100%;
+  border-radius: 20px;
+  height: 20%;
+}
+
+.products {
+  padding: 0px;
+  text-align: center;
+}
+
+.productHead {
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+
+.productContainer {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: white;
+  width: 250px;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 10px 5px 15px rgba(0, 0, 0, 0.4);
+  transition: 1s;
+}
+
+.cardImage {
+  width: 100%;
+  height: 400px;
+  border-radius: 10px;
+}
+
+.card:hover {
+  transform: translateY(-30px);
+  margin-bottom: 10px;
+}
+
+.productName,
+.price {
+  margin: 10px 0px;
+}
+
+.banner {
+  margin: 50px 5% 100px 5%;
+  padding: 8px 20px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.8)),
+    url(https://media.designcafe.com/wp-content/uploads/2026/02/15211822/best-wall-colour-combinations-living-room.webp);
+  background-size: cover;
+  background-position: bottom;
+  border-radius: 15px;
+}
+
+.aboutHead {
+  font-size: 40px;
+  color: white;
+  margin-bottom: 40px;
+}
+
+.aboutPara {
+  font-size: 20px;
+  color: white;
+  margin-bottom: 40px;
+  justify-content: center;
+}
+.aboutButton {
+  font-size: 15px;
+  background-color: rgb(36, 15, 15);
+  padding: 10px 20px;
+  border-radius: 15px;
+  color: white;
+  font-weight: 600;
+}
+
+.contact {
+  display: flex;
+  margin: 20px 0px;
+  justify-content: space-around;
+  background-color: white;
+  padding: 30px 5%;
+  align-items: center;
+  box-shadow: 10px 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.contactHead,
+.subHead {
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+.contactPh,
+.contactMail {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.socialIcons {
+  margin-top: 20px;
+}
+.iconLink {
+  color: black;
+  margin-right: 35px;
+}
+
+.box {
+  display: flex;
+  gap: 15px;
+}
+
+.subInput {
+  width: 250px;
+}
+.subButton {
+  color: white;
+  background-color: brown;
+  padding: 3px 6px;
+  border-radius: 5px;
+}
+
+.footer {
+  background-color: rgb(64, 9, 9);
+  color: white;
+  text-align: center;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(0px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-80px);
+  }
+}
+
+/*Responsive*/
+
+@media (max-width: 768px) {
+  .brand {
+    font-size: 15px;
+  }
+  .icons {
+    display: flex;
+  }
+  #cancelIcon {
+    display: none;
+  }
+
+  #check:checked ~ .icons > #menuIcon {
+    display: none;
+  }
+
+  #check:checked ~ .icons > #cancelIcon {
+    display: flex;
+  }
+  .navLinks {
+    position: absolute;
+    width: 100%;
+    top: 8%;
+    left: 0%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+  }
+  #check:checked ~ .navLinks {
+    display: flex;
+    height: fit-content;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+  }
+  .link {
+    color: white;
+  }
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+  .heroTitle {
+    font-size: 35px;
+  }
+  .banner {
+    height: fit-content;
+  }
+  .box {
+    width: 100%;
+  }
+  .contactDiv {
+    width: 100%;
+  }
+}
